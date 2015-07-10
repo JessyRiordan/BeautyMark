@@ -13,18 +13,24 @@ main.container-fluid {
       vertical-align: top;
       display: inline-block;
     }
-    img.img-rounded {
+    img.logo {
       display: inline-block;
       vertical-align: baseline;
     }
   }
   footer.page-footer {
-    position: absolute;
+    position: static;
     bottom: 0;
     background-color: #060847;
     width: 100%;
+    height: 50px;
     h3.designedBy {
       color: #FFFFFF;
+      display: inline-block;
+    }
+    img.about {
+      display: inline-block;
+      vertical-align: top;
     }
   }
 }

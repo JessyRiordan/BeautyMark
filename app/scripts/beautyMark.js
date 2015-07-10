@@ -13,6 +13,12 @@
       });
       // END $routeProvider homepage
 
+      // routeProvider about
+      $routeProvider.when('/about', {
+        templateUrl: 'views/about.html'
+      });
+      // END $routeProvider about
+      
       // NAILS routes
       // routeProvider nails
       $routeProvider.when('/nails', {
