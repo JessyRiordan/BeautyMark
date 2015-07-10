@@ -7,6 +7,12 @@
 
     .config(function($routeProvider){
 
+      // routeProvider login
+      $routeProvider.when('/login', {
+        templateUrl: 'views/login.html'
+      });
+      // END routeProvider login
+
       // routeProvider homepage
       $routeProvider.when('/homepage', {
         templateUrl: 'views/homepage.html'
@@ -18,7 +24,7 @@
         templateUrl: 'views/about.html'
       });
       // END $routeProvider about
-      
+
       // NAILS routes
       // routeProvider nails
       $routeProvider.when('/nails', {
@@ -68,6 +74,12 @@
         templateUrl: 'views/tools/category.html'
       });
       // END $routeProvider tools
+
+      // routeProvider default
+      $routeProvider.when('/', {
+        redirectTo: '/login'
+      });
+      // END routeProvider default
     });
 
 })();
