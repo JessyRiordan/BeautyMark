@@ -1,0 +1,24 @@
+main.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  header.page-header {
+    background-color: #060847;
+    margin: 0;
+    height: 100px;
+    h1.title {
+      color: #fff;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 35px;
+    }
+  }
+  footer.page-footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #060847;
+    width: 100%;
+    h3.designedBy {
+      color: #FFFFFF;
+    }
+  }
+}
