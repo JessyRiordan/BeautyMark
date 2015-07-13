@@ -25,6 +25,18 @@
       });
       // END $routeProvider about
 
+      // 404 Page
+      // routeProvider 404
+      $routeProvider.when('/404', {
+        templateUrl: 'views/404.html'
+      });
+      // END $routeProvider 404
+
+      // route provider otherwise
+      $routeProvider.otherwise('/404');
+      // END $routeProvider otherwise
+      // END 404 Page
+
       // NAILS routes
       // routeProvider nails
       $routeProvider.when('/nails', {
