@@ -38,9 +38,18 @@ main.container-fluid {
     }
   }
 }
-/*
-@media (min-width: 768px) {
-  img.logo {
-    width: 100px;
+
+@media (max-width: 320px) {
+  h1.title {
+    padding-right: 0.5em;
+    width: 6em;
   }
-} */
+  div.homepageLink{
+    padding: 0;
+    img.logo {
+      padding: 0;
+      max-width: 5.5em;
+      height: auto;
+     }
+  }
+}
