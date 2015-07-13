@@ -7,11 +7,35 @@
 
     .config(function($routeProvider){
 
+      // routeProvider login
+      $routeProvider.when('/login', {
+        templateUrl: 'views/login.html'
+      });
+      // END routeProvider login
+
       // routeProvider homepage
       $routeProvider.when('/homepage', {
         templateUrl: 'views/homepage.html'
       });
       // END $routeProvider homepage
+
+      // routeProvider about
+      $routeProvider.when('/about', {
+        templateUrl: 'views/about.html'
+      });
+      // END $routeProvider about
+
+      // 404 Page
+      // routeProvider 404
+      $routeProvider.when('/404', {
+        templateUrl: 'views/404.html'
+      });
+      // END $routeProvider 404
+
+      // route provider otherwise
+      $routeProvider.otherwise('/404');
+      // END $routeProvider otherwise
+      // END 404 Page
 
       // NAILS routes
       // routeProvider nails
@@ -62,6 +86,12 @@
         templateUrl: 'views/tools/category.html'
       });
       // END $routeProvider tools
+
+      // routeProvider default
+      $routeProvider.when('/', {
+        redirectTo: '/login'
+      });
+      // END routeProvider default
     });
 
 })();

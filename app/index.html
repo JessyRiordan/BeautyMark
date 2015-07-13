@@ -21,9 +21,23 @@
   </head>
   <body>
 
-    <main class="container">
-      <button><a href="#homepage">Homepage</a></button>
+    <main class="container-fluid">
+      <header class="page-header">
+        <h1 class="title col-md-8">BeautyMark</h1>
+        <div class="homepageLink col-md-4">
+          <a href="#homepage">
+            <img src="/images/logo.png" class="logo img-rounded pull-right">
+          </a>
+        </div>
+      </header>
       <div ng-view></div>
+      <footer class="page-footer">
+        <h3 class="designedBy col-md-8">© 2015 JessySue</h3>
+        <div class="aboutLink col-md-4">
+        <a href="#about">
+          <img src="/images/about.png" class="about img-rounded pull-right">
+        </a>
+      </footer>
 
     </main> <!-- END: container -->
 

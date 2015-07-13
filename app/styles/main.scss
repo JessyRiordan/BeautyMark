@@ -4,6 +4,19 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import "index.scss";
+@import "about.scss";
+@import "login.scss";
+@import "homepage.scss";
+@import "404.scss";
+@import "nailsCategory.scss";
+@import "eyesCategory.scss";
+@import "faceCategory.scss";
+@import "lipsCategory.scss";
+@import "hairCategory.scss";
+@import "toolsCategory.scss";
+@import "nailsAdd.scss";
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -15,6 +28,7 @@ $icon-font-path: '../fonts/';
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  font-family: Papyrus, fantasy;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
