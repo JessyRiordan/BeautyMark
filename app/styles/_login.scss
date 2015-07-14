@@ -1,19 +1,38 @@
 h3.loginTitle {
   color: #060847;
-}
-div.login {
-  border: 2px solid #060847;
-  border-radius: 5px;
-  height: 2.5em;
-  width: 5em;
-  background-color: #060847;
-  margin-bottom: 20px;
-  a {
-  display: block;
-  height: 100%;
-  width: 100%;
   text-align: center;
-  line-height: 2.5em;
-  color: #FFFFFF;
+}
+p.col-md-12 {
+  color: #060847;
+  text-align: center;
+}
+section.facebookLogin {
+  display: inline-block;
+  border: 0.5em solid #060847;
+  border-radius: 5%;
+  text-align: center;
+  width: 60%;
+  margin-left: 18%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  p {
+    margin: 5%;
+  }
+  div.login {
+    border: 2px solid #060847;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 5em;
+    background-color: #060847;
+    margin-left: 33%;
+    margin-bottom: 5%;
+    a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 2.5em;
+    color: #FFFFFF;
+    }
   }
 }
