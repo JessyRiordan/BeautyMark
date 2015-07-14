@@ -10,6 +10,12 @@
       // routeProvider login
       $routeProvider.when('/login', {
         templateUrl: 'views/login.html'
+
+      });
+      $routeProvider.when('/homepageg', {
+        templateUrl: 'views/homepage.html',
+        controller: 'LoginController',
+        controllerAs: 'login'
       });
       // END routeProvider login
 
