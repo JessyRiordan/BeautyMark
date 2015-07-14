@@ -10,9 +10,8 @@
       // routeProvider login
       $routeProvider.when('/login', {
         templateUrl: 'views/login.html'
-
       });
-      $routeProvider.when('/homepageg', {
+      $routeProvider.when('/fblogin', {
         templateUrl: 'views/homepage.html',
         controller: 'LoginController',
         controllerAs: 'login'
