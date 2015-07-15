@@ -5,6 +5,10 @@
       .controller('LoginController', function() {
           var newUser = true;
           var ref = new Firebase('https://beautymark.firebaseio.com');
+          var authData = ref.getAuth();
+          if (authData) {
+            console.log ('Authenticated user with uid:', authData.uid);
+          };
           ref.authWithOAuthPopup('facebook', function(error, authData) {
             if (error) {
               console.log('Login Failed!', error);
