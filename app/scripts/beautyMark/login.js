@@ -2,9 +2,9 @@
 (function() {
     'use strict';
     angular.module('beautyMark')
-      .controller('LoginController', function() {
+      .controller('LoginController', function(FIREBASE_URL) {
           var newUser = true;
-          var ref = new Firebase('https://beautymark.firebaseio.com');
+          var ref = new Firebase(FIREBASE_URL);
           var authData = ref.getAuth();
           if (authData) {
             console.log ('Authenticated user with uid:', authData.uid);

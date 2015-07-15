@@ -3,7 +3,7 @@
 (function(){
   'use strict';
 
-  angular.module('beautyMark', ['ngRoute'])
+  angular.module('beautyMark', ['ngRoute', 'restangular'])
 
     .config(function($routeProvider){
 
@@ -42,13 +42,17 @@
       // NAILS routes
       // routeProvider nails
       $routeProvider.when('/nails', {
-        templateUrl: 'views/nails/category.html'
+        templateUrl: 'views/nails/category.html',
+        controller: 'NailsController',
+        controllerAs: 'nails'
       });
       // END $routeProvider nails
 
       // routeProvider nails/add
       $routeProvider.when('/nails/add', {
-        templateUrl: 'views/nails/add.html'
+        templateUrl: 'views/nails/add.html',
+        controller: 'AddNailsController',
+        controllerAs: 'addNail'
       });
       // END $routeProvider nails/add
 
@@ -94,6 +98,6 @@
         redirectTo: '/login'
       });
       // END routeProvider default
-    });
-
+    })
+    .constant('FIREBASE_URL', 'https://beautymark.firebaseio.com/')
 })();
