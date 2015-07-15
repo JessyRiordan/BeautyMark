@@ -18,14 +18,11 @@
           }, {
             remember: 'sessionOnly'
           });
-          function getName(authData) {
-              return authData.facebook.displayName;
-          }
           ref.onAuth(function(authData) {
             if (authData && newUser) {
               ref.child('users').child(authData.uid).set({
                 provider: authData.provider,
-                name: getName(authData)
+                name: authData.facebook.displayName
               });
             }
           });
