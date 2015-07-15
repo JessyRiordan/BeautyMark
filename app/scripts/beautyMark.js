@@ -1,9 +1,9 @@
-/* global angular */
+/* global angular Firebase*/
 
 (function(){
   'use strict';
 
-  angular.module('beautyMark', ['ngRoute', 'restangular'])
+  angular.module('beautyMark', ['ngRoute', 'restangular', 'firebase'])
 
     .config(function($routeProvider){
 
