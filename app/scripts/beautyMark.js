@@ -99,5 +99,5 @@
       });
       // END routeProvider default
     })
-    .constant('FIREBASE_URL', 'https://beautymark.firebaseio.com/')
+    .constant('FIREBASE_URL', 'https://beautymark.firebaseio.com/users/')
 })();
