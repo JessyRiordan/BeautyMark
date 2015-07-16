@@ -4,7 +4,8 @@
   angular.module('beautyMark')
     .controller('AddNailsController', function(FIREBASE_URL, $firebaseArray) {
       var ref = new Firebase(FIREBASE_URL);
-      var nailsRef = ref.child("nails");
+      var authData = ref.getAuth();
+      var nailsRef = ref.child(authData.uid + "/nails");
       var nailProduct = {
         'brand': '',
         'name': '',
@@ -15,7 +16,7 @@
       };
       this.nailProduct = $firebaseArray(nailsRef);
       console.log(nailProduct);
-      this.submitNail = function($scope, $firebaseArray) {
+      this.submitNail = function($firebaseArray) {
         this.nailProduct.$add({
           brand: this.brand,
           name: this.name,
