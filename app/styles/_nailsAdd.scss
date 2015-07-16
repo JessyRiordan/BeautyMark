@@ -38,12 +38,19 @@ form {
       border-color: #060847;
     }
   }
+  p.rating {
+    color: #060847;
+    select {
+      color: #060847;
+      border-color: #060847;
+    }
+  }
   p.submit {
     color: #FFFFFF;
     input {
       color: #FFFFFF;
       background-color: #060847;
-      border-color: #060847;      
+      border-color: #060847;
     }
   }
 }
