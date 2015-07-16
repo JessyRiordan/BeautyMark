@@ -57,7 +57,7 @@
       // END $routeProvider nails/add
 
       // routeProvider nails/item
-      $routeProvider.when('/nails/:item', {
+      $routeProvider.when('/nails/item', {
         templateUrl: 'views/nails/item.html'
       });
       // END $routeProvider nails/item
