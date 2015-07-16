@@ -1,11 +1,10 @@
-<div class="container-fluid" ng-submit="AddNailsController">
+<div class="container-fluid">
   <h3 class="nailsAddTitle">Nails</h3>
-  <form role="form">
+  <form role="form" ng-submit="submitNail()">
     <p class="brandName">
       <label class="form-group">
         <span>Brand Name:</span>
-        <select class="form-control" ng-model="newNailsBrand">
-          <option>Please Select a Brand</option>
+        <select class="form-control" ng-model="item.Brand">
           <option>butter LONDON</option>
           <option>China Glaze</option>
           <option>Deborah Lippmann</option>
@@ -22,7 +21,7 @@
     <p class="colorName">
       <label class="form-group">
         <span>Color Name:</span>
-        <input type="text" class="form-control" ng-model="newNailsName">
+        <input type="text" class="form-control" ng-model="item.Name">
       </label>
     </p>
     <p class="colorFamily">
@@ -89,7 +88,7 @@
       </label>
     </p>
     <p class="submit">
-      <input class="btn btn-default" type="submit" value="Add">
+      <input onclick="location.href='#nails'" class="btn btn-default" type="submit" value="Add">
     </p>
   </form>
 </div>
