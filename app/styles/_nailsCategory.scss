@@ -27,3 +27,39 @@ section.nailsInfo {
     }
   }
 }
+section.nailsProducts {
+  div.add {
+    display: inline-block;
+    border: 2px solid #060847;
+    border-radius: 8%;
+    height: 2.5em;
+    width: 10em;
+    background-color: #060847;
+    text-align: center;
+    a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 2.5em;
+    color: #FFFFFF;
+    }
+  }
+  div.product {
+    border: 0.5em solid #060847;
+    border-radius: 10%;
+    height: 100%;
+    width: 95%;
+    img {
+      display: inline-block;
+      border: 0.25em solid #060847;
+      border-radius: 10%;
+      height: 50%;
+      width: 50%;
+    }
+    div.productDetails {
+      display: inline-block;
+      text-align: right;
+    }
+  }
+}
