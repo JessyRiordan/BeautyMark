@@ -18,13 +18,13 @@
           }, {
             remember: 'sessionOnly'
           });
-          ref.onAuth(function(authData) {
-            if (authData && newUser) {
-              ref.child('users').child(authData.uid).set({
-                provider: authData.provider,
-                name: authData.facebook.displayName
-              });
-            }
-          });
+          // ref.onAuth(function(authData) {
+          //   if (authData && newUser) {
+          //     ref.child('users').child(authData.uid).set({
+          //       provider: authData.provider,
+          //       name: authData.facebook.displayName
+          //     });
+          //   }
+          // });
       });
 })();
