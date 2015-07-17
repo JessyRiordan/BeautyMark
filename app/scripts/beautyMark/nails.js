@@ -2,12 +2,13 @@
 (function() {
   'use strict';
   angular.module('beautyMark')
-    .controller('NailsController', function($scope, $firebaseObject, FIREBASE_URL) {
+    .controller('NailsController', function($scope, $firebaseArray, FIREBASE_URL) {
       var ref = new Firebase(FIREBASE_URL);
       var user = ref.getAuth();
-      var nail = new Firebase(FIREBASE_URL + user.uid + '/nails');
-        $scope.data = $firebaseObject(nail);
-        console.log($scope.data);
+      var nailsRef = new Firebase(FIREBASE_URL + user.uid + '/nails');
+        this.data = $firebaseArray(nailsRef);
+        console.log(this.data);
+        console.log();
       });
 
 })();
