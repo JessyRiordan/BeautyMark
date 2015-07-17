@@ -12,15 +12,15 @@
     <div class="add">
       <a href="#nails/add">ADD</a>
     </div>
-  <div class="product">
+  <div class="product" ng-repeat="nail in nails.data">
     <img src="/images/nail.png">
     <div class="productDetails">
-      <h4>OPI</h4>
-      <h4>Red</h4>
-      <p>Pink
-      <br>Cool
-      <br>Glitter
-      <br>Rating: 1</p>
+      <h4>{{nail.brand}}</h4>
+      <h4>{{nail.name}}</h4>
+      <p>{{nail.family}}
+      <br>{{nail.tone}}
+      <br>{{nail.finish}}
+      <br>Rating: {{nail.rating}}</p>
     </div>
   </div>
   </section>
