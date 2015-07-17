@@ -24,11 +24,12 @@
           tone: this.tone,
           finish: this.finish,
           rating: this.rating
+        }).then(function(){
+          $location.path('/nails');
         });
-        $location.path('/nails');
       };
-      this.redirect = function() {
-        return $location.path('/nails');
-      };
+      // this.redirect = function() {
+      //   return $location.path('/nails');
+      // };
   });
 })();
