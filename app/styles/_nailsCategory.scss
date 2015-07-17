@@ -29,13 +29,13 @@ section.nailsInfo {
 }
 section.nailsProducts {
   div.add {
-    display: inline-block;
     border: 2px solid #060847;
     border-radius: 8%;
     height: 2.5em;
     width: 10em;
     background-color: #060847;
     text-align: center;
+    margin: 5%;
     a {
     display: block;
     height: 100%;
@@ -50,16 +50,27 @@ section.nailsProducts {
     border-radius: 10%;
     height: 100%;
     width: 95%;
+    margin: 5%;
     img {
       display: inline-block;
       border: 0.25em solid #060847;
       border-radius: 10%;
-      height: 50%;
-      width: 50%;
+      height: 40%;
+      width: 40%;
     }
-    div.productDetails {
-      display: inline-block;
-      text-align: right;
+    div.productDetails{
+      width: 55%;
+      color: #060847;
+      div.mainInfo {
+        display: inline-block;
+        text-align: left;
+        margin-top: 5%;
+      }
+      div.secondaryInfo {
+        text-align: left;
+        margin-bottom: 5%;
+      }
     }
+
   }
 }

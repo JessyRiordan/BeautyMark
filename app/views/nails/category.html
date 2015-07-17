@@ -14,13 +14,15 @@
     </div>
   <div class="product" ng-repeat="nail in nails.data">
     <img src="/images/nail.png">
-    <div class="productDetails">
-      <h4>{{nail.brand}}</h4>
-      <h4>{{nail.name}}</h4>
-      <p>{{nail.family}}
-      <br>{{nail.tone}}
-      <br>{{nail.finish}}
-      <br>Rating: {{nail.rating}}</p>
+    <div class="productDetails pull-right">
+      <div class="mainInfo">
+        <h4>{{nail.brand}}</h4>
+        <h4>{{nail.name}}</h4>
+      </div>
+      <div class="secondaryInfo">
+        <p>{{nail.family}}, {{nail.tone}}, {{nail.finish}}
+        <br>Rating: {{nail.rating}}</p>
+      </div>
     </div>
   </div>
   </section>
