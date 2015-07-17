@@ -1,11 +1,29 @@
 <div class="container-fluid">
   <h3 class="nailsTitle">Nails</h3>
-  <section class="nailsInfo">
+  <section class="nailsInfo"  ng-hide="nails.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
       <div class="add">
         <a href="#nails/add">ADD</a>
       </div>
     </p>
+  </section>
+  <section class="nailsProducts">
+    <div class="add">
+      <a href="#nails/add">ADD</a>
+    </div>
+  <div class="product" ng-repeat="nail in nails.data">
+    <img src="/images/nail.png">
+    <div class="productDetails pull-right">
+      <div class="mainInfo">
+        <h4>{{nail.brand}}</h4>
+        <h4>{{nail.name}}</h4>
+      </div>
+      <div class="secondaryInfo">
+        <p>{{nail.family}}, {{nail.tone}}, {{nail.finish}}
+        <br>Rating: {{nail.rating}}</p>
+      </div>
+    </div>
+  </div>
   </section>
 </div>
