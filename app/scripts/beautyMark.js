@@ -1,4 +1,4 @@
-/* global angular Firebase*/
+/* global angular */
 
 (function(){
   'use strict';
@@ -111,5 +111,5 @@
       });
       // END routeProvider default
     })
-    .constant('FIREBASE_URL', 'https://beautymark.firebaseio.com/users/')
+    .constant('FIREBASE_URL', 'https://beautymark.firebaseio.com/users/');
 })();
