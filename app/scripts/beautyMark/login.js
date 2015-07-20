@@ -8,8 +8,8 @@
           var authData = ref.getAuth();
           if (authData) {
             console.log('Authenticated user with uid:', authData.uid);
-          };
-          ref.authWithOAuthPopup('facebook', function(error, authData) {
+          }
+          ref.authWithOAuthPopup('facebook', function(error) {
             if (error) {
               console.log('Login Failed!', error);
             } else {
