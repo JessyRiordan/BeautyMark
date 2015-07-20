@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <h3 class="hairTitle">Hair</h3>
-  <section class="hairInfo">
+  <section class="hairInfo" ng-hide="hair.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
       <div class="add">
@@ -9,3 +9,21 @@
     </p>
   </section>
 </div>
+<section class="hairProducts" ng-hide="!hair.data.length">
+  <div class="add">
+    <a href="#hair/add">ADD</a>
+  </div>
+<div class="product" ng-repeat="hair in hair.data">
+  <img src="/images/hair.png">
+  <div class="productDetails pull-right">
+    <div class="mainInfo">
+      <h4>{{hair.product}}</h4>
+      <h4>{{hair.brand}}</h4>
+    </div>
+    <div class="secondaryInfo">
+      <p>{{hair.type}}
+      <br>Rating: {{hair.rating}}</p>
+    </div>
+  </div>
+</div>
+</section>
