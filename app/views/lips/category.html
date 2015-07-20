@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <h3 class="lipsTitle">Lips</h3>
-  <section class="lipsInfo">
+  <section class="lipsInfo" ng-hide="lips.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
       <div class="add">
@@ -9,3 +9,21 @@
     </p>
   </section>
 </div>
+<section class="faceProducts" ng-hide="!lips.data.length">
+  <div class="add">
+    <a href="#lips/add">ADD</a>
+  </div>
+  <div class="product" ng-repeat="lips in lips.data">
+    <img src="/images/lips.png">
+    <div class="productDetails pull-right">
+      <div class="mainInfo">
+        <h4>{{lips.type}}</h4>
+        <h4>{{lips.brand}}</h4>
+      </div>
+      <div class="secondaryInfo">
+        <p>{{lips.color}}, {{lips.family}}, {{lips.tone}}
+        <br>Rating: {{lips.rating}}</p>
+      </div>
+    </div>
+  </div>
+  </section>

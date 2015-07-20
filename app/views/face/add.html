@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <h3 class="faceAddTitle">Face</h3>
+  <form role="form" ng-submit="addFace.submitFace()">
+    <p class="type">
+      <label class="form-group">
+        <span>Type of Face Product:</span>
+        <select class="type form-control" id="brand" ng-model="addFace.type" required>
+          <option>Foundation</option>
+          <option>Powder</option>
+          <option>Blush</option>
+          <option>Bronzer</option>
+          <option>Face Primer</option>
+        </select>
+      </label>
+    </p>
+    <p class="productName">
+      <label class="form-group">
+        <span>Product Name:</span>
+        <input type="text" class="form-control" ng-model="addFace.product" required>
+      </label>
+    </p>
+    <p class="brandName">
+      <label class="form-group">
+        <span>Brand Name:</span>
+        <input type="text" class="form-control" ng-model="addFace.brand" required>
+      </label>
+    </p>
+    <p class="colorName">
+      <label class="form-group">
+        <span>Color Name:</span>
+        <input type="text" class="form-control" ng-model="addFace.color" required>
+      </label>
+    </p>
+    <p class="rating">
+      <label class="form-group" ng-model="addFace.rating">
+        <span>Rating: </span>
+        <select class="form-control" ng-model="addFace.rating" required>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </label>
+    </p>
+    <p class="submit">
+      <input id="submit" class="btn btn-default" type="submit" value="Add" required>
+    </p>
+  </form>
+</div>

@@ -72,38 +72,86 @@
       });
       // END $routeProvider eyes
 
-      // routeProvider nails/add
+      // routeProvider eyes/add
       $routeProvider.when('/eyes/add', {
         templateUrl: 'views/eyes/add.html',
         controller: 'AddEyesController',
         controllerAs: 'addEye'
       });
-      // END $routeProvider nails/add
+      // END $routeProvider eyes/add
       // END EYES routes
 
+      // FACE routes
       // routeProvider face
       $routeProvider.when('/face', {
-        templateUrl: 'views/face/category.html'
+        templateUrl: 'views/face/category.html',
+        controller: 'FaceController',
+        controllerAs: 'face'
       });
       // END $routeProvider face
 
+      // routeProvider face/add
+      $routeProvider.when('/face/add', {
+        templateUrl: 'views/face/add.html',
+        controller: 'AddFaceController',
+        controllerAs: 'addFace'
+      });
+      // END $routeProvider face/add
+      // END FACE routes
+
+      // LIPS routes
       // routeProvider lips
       $routeProvider.when('/lips', {
-        templateUrl: 'views/lips/category.html'
+        templateUrl: 'views/lips/category.html',
+        controller: 'LipsController',
+        controllerAs: 'lips'
       });
       // END $routeProvider lips
 
+      // routeProvider lips/add
+      $routeProvider.when('/lips/add', {
+        templateUrl: 'views/lips/add.html',
+        controller: 'AddLipsController',
+        controllerAs: 'addLips'
+      });
+      // END $routeProvider lips/add
+      // END LIPS routes
+
+      // HAIR routes
       // routeProvider hair
       $routeProvider.when('/hair', {
-        templateUrl: 'views/hair/category.html'
+        templateUrl: 'views/hair/category.html',
+        controller: 'HairController',
+        controllerAs: 'hair'
       });
       // END $routeProvider hair
 
+      // routeProvider hair/add
+      $routeProvider.when('/hair/add', {
+        templateUrl: 'views/hair/add.html',
+        controller: 'AddHairController',
+        controllerAs: 'addHair'
+      });
+      // END $routeProvider hair/add
+      // END HAIR routes
+
+      // TOOLS routes
       // routeProvider tools
       $routeProvider.when('/tools', {
-        templateUrl: 'views/tools/category.html'
+        templateUrl: 'views/tools/category.html',
+        controller: 'ToolsController',
+        controllerAs: 'tools'
       });
       // END $routeProvider tools
+
+      // routeProvider tools/add
+      $routeProvider.when('/tools/add', {
+        templateUrl: 'views/tools/add.html',
+        controller: 'AddToolsController',
+        controllerAs: 'addTools'
+      });
+      // END routeProvider tools/add
+      // END TOOLS routes
 
       // routeProvider default
       $routeProvider.when('/', {

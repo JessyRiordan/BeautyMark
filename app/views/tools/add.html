@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <h3 class="toolsAddTitle">Tools</h3>
+  <form role="form" ng-submit="addTools.submitTools()">
+    <p class="type">
+      <label class="form-group">
+        <span>Type of Tool:</span>
+        <select class="type form-control" id="brand" ng-model="addTools.type" required>
+          <option>Hair Styling</option>
+          <option>Hair Brush/Comb</option>
+          <option>Nail Tool</option>
+          <option>Makeup Brush</option>
+        </select>
+      </label>
+    </p>
+    <p class="productName">
+      <label class="form-group">
+        <span>Product Name:</span>
+        <input type="text" class="form-control" ng-model="addTools.product" required>
+      </label>
+    </p>
+    <p class="brandName">
+      <label class="form-group">
+        <span>Brand Name:</span>
+        <input type="text" class="form-control" ng-model="addTools.brand" required>
+      </label>
+    </p>
+    <p class="rating">
+      <label class="form-group" ng-model="addTools.rating">
+        <span>Rating: </span>
+        <select class="form-control" ng-model="addTools.rating" required>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </label>
+    </p>
+    <p class="submit">
+      <input id="submit" class="btn btn-default" type="submit" value="Add" required>
+    </p>
+  </form>
+</div>
