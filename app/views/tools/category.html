@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <h3 class="toolsTitle">Tools</h3>
-  <section class="toolsInfo">
+  <section class="toolsInfo"  ng-hide="tools.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
       <div class="add">
@@ -9,3 +9,21 @@
     </p>
   </section>
 </div>
+<section class="toolsProducts" ng-hide="!tools.data.length">
+  <div class="add">
+    <a href="#tools/add">ADD</a>
+  </div>
+<div class="product" ng-repeat="tools in tools.data">
+  <img src="/images/tools.png">
+  <div class="productDetails pull-right">
+    <div class="mainInfo">
+      <h4>{{tools.product}}</h4>
+      <h4>{{tools.brand}}</h4>
+    </div>
+    <div class="secondaryInfo">
+      <p>{{tools.type}}
+      <br>Rating: {{tools.rating}}</p>
+    </div>
+  </div>
+</div>
+</section>
