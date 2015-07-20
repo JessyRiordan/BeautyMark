@@ -72,20 +72,32 @@
       });
       // END $routeProvider eyes
 
-      // routeProvider nails/add
+      // routeProvider eyes/add
       $routeProvider.when('/eyes/add', {
         templateUrl: 'views/eyes/add.html',
         controller: 'AddEyesController',
         controllerAs: 'addEye'
       });
-      // END $routeProvider nails/add
+      // END $routeProvider eyes/add
       // END EYES routes
 
+      // FACE routes
       // routeProvider face
       $routeProvider.when('/face', {
-        templateUrl: 'views/face/category.html'
+        templateUrl: 'views/face/category.html',
+        controller: 'FaceController',
+        controllerAs: 'face'
       });
       // END $routeProvider face
+
+      // routeProvider face/add
+      $routeProvider.when('/face/add', {
+        templateUrl: 'views/face/add.html',
+        controller: 'AddFaceController',
+        controllerAs: 'addFace'
+      });
+      // END $routeProvider face/add
+      // END FACE routes
 
       // routeProvider lips
       $routeProvider.when('/lips', {
