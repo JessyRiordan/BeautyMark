@@ -7,7 +7,7 @@
           var ref = new Firebase(FIREBASE_URL);
           var authData = ref.getAuth();
           if (authData) {
-            console.log ('Authenticated user with uid:', authData.uid);
+            console.log('Authenticated user with uid:', authData.uid);
           };
           ref.authWithOAuthPopup('facebook', function(error, authData) {
             if (error) {
