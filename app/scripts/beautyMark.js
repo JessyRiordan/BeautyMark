@@ -117,11 +117,23 @@
       // END $routeProvider lips/add
       // END LIPS routes
 
+      // HAIR routes
       // routeProvider hair
       $routeProvider.when('/hair', {
-        templateUrl: 'views/hair/category.html'
+        templateUrl: 'views/hair/category.html',
+        controller: 'HairController',
+        controllerAs: 'hair'
       });
       // END $routeProvider hair
+
+      // routeProvider hair/add
+      $routeProvider.when('/hair/add', {
+        templateUrl: 'views/hair/add.html',
+        controller: 'AddHairController',
+        controllerAs: 'addHair'
+      });
+      // END $routeProvider hair/add
+      // END HAIR routes
 
       // routeProvider tools
       $routeProvider.when('/tools', {
