@@ -135,11 +135,23 @@
       // END $routeProvider hair/add
       // END HAIR routes
 
+      // TOOLS routes
       // routeProvider tools
       $routeProvider.when('/tools', {
-        templateUrl: 'views/tools/category.html'
+        templateUrl: 'views/tools/category.html',
+        controller: 'ToolsController',
+        controllerAs: 'tools'
       });
       // END $routeProvider tools
+
+      // routeProvider tools/add
+      $routeProvider.when('/tools/add', {
+        templateUrl: 'views/tools/add.html',
+        controller: 'AddToolsController',
+        controllerAs: 'addTools'
+      });
+      // END routeProvider tools/add
+      // END TOOLS routes
 
       // routeProvider default
       $routeProvider.when('/', {
