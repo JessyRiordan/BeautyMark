@@ -99,11 +99,23 @@
       // END $routeProvider face/add
       // END FACE routes
 
+      // LIPS routes
       // routeProvider lips
       $routeProvider.when('/lips', {
-        templateUrl: 'views/lips/category.html'
+        templateUrl: 'views/lips/category.html',
+        controller: 'LipsController',
+        controllerAs: 'lips'
       });
       // END $routeProvider lips
+
+      // routeProvider lips/add
+      $routeProvider.when('/lips/add', {
+        templateUrl: 'views/lips/add.html',
+        controller: 'AddLipsController',
+        controllerAs: 'addLips'
+      });
+      // END $routeProvider lips/add
+      // END LIPS routes
 
       // routeProvider hair
       $routeProvider.when('/hair', {
