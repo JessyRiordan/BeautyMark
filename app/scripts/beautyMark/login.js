@@ -2,10 +2,14 @@
 (function() {
     'use strict';
     angular.module('beautyMark')
-      .controller('LoginController', function() {
-          var newUser = true;
-          var ref = new Firebase('https://beautymark.firebaseio.com');
-          ref.authWithOAuthPopup('facebook', function(error, authData) {
+      .controller('LoginController', function(FIREBASE_URL) {
+          // var newUser = true;
+          var ref = new Firebase(FIREBASE_URL);
+          var authData = ref.getAuth();
+          if (authData) {
+            console.log('Authenticated user with uid:', authData.uid);
+          }
+          ref.authWithOAuthPopup('facebook', function(error) {
             if (error) {
               console.log('Login Failed!', error);
             } else {
@@ -14,16 +18,13 @@
           }, {
             remember: 'sessionOnly'
           });
-          function getName(authData) {
-              return authData.facebook.displayName;
-          }
-          ref.onAuth(function(authData) {
-            if (authData && newUser) {
-              ref.child('users').child(authData.uid).set({
-                provider: authData.provider,
-                name: getName(authData)
-              });
-            }
-          });
+          // ref.onAuth(function(authData) {
+          //   if (authData && newUser) {
+          //     ref.child('users').child(authData.uid).set({
+          //       provider: authData.provider,
+          //       name: authData.facebook.displayName
+          //     });
+          //   }
+          // });
       });
 })();

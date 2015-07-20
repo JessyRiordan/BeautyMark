@@ -1,11 +1,25 @@
-h3.nailsAddTitle {
+h3.eyesAddTitle {
   color: #060847;
 }
 form {
   color: #060847;
-  p.brandName {
+  p.type {
     color: #060847;
     select {
+      color: #060847;
+      border-color: #060847;
+    }
+  }
+  p.productName {
+    color: #060847;
+    input {
+      color: #060847;
+      border-color: #060847;
+    }
+  }
+  p.brandName {
+    color: #060847;
+    input {
       color: #060847;
       border-color: #060847;
     }
@@ -13,27 +27,6 @@ form {
   p.colorName {
     color: #060847;
     input {
-      color: #060847;
-      border-color: #060847;
-    }
-  }
-  p.colorFamily {
-    color: #060847;
-    select {
-      color: #060847;
-      border-color: #060847;
-    }
-  }
-  p.colorTone {
-    color: #060847;
-    select {
-      color: #060847;
-      border-color: #060847;
-    }
-  }
-  p.colorFinish {
-    color: #060847;
-    select {
       color: #060847;
       border-color: #060847;
     }

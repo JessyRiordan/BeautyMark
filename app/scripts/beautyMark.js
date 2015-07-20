@@ -3,7 +3,7 @@
 (function(){
   'use strict';
 
-  angular.module('beautyMark', ['ngRoute'])
+  angular.module('beautyMark', ['ngRoute', 'restangular', 'firebase'])
 
     .config(function($routeProvider){
 
@@ -42,13 +42,17 @@
       // NAILS routes
       // routeProvider nails
       $routeProvider.when('/nails', {
-        templateUrl: 'views/nails/category.html'
+        templateUrl: 'views/nails/category.html',
+        controller: 'NailsController',
+        controllerAs: 'nails'
       });
       // END $routeProvider nails
 
       // routeProvider nails/add
       $routeProvider.when('/nails/add', {
-        templateUrl: 'views/nails/add.html'
+        templateUrl: 'views/nails/add.html',
+        controller: 'AddNailsController',
+        controllerAs: 'addNail'
       });
       // END $routeProvider nails/add
 
@@ -59,11 +63,23 @@
       // END $routeProvider nails/item
       // END NAILS routes
 
+      // EYES routes
       // routeProvider eyes
       $routeProvider.when('/eyes', {
-        templateUrl: 'views/eyes/category.html'
+        templateUrl: 'views/eyes/category.html',
+        controller: 'EyesController',
+        controllerAs: 'eyes'
       });
       // END $routeProvider eyes
+
+      // routeProvider nails/add
+      $routeProvider.when('/eyes/add', {
+        templateUrl: 'views/eyes/add.html',
+        controller: 'AddEyesController',
+        controllerAs: 'addEye'
+      });
+      // END $routeProvider nails/add
+      // END EYES routes
 
       // routeProvider face
       $routeProvider.when('/face', {
@@ -94,6 +110,6 @@
         redirectTo: '/login'
       });
       // END routeProvider default
-    });
-
+    })
+    .constant('FIREBASE_URL', 'https://beautymark.firebaseio.com/users/');
 })();

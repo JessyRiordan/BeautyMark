@@ -1,11 +1,10 @@
 <div class="container-fluid">
   <h3 class="nailsAddTitle">Nails</h3>
-  <form role="form">
+  <form role="form" ng-submit="addNail.submitNail()">
     <p class="brandName">
       <label class="form-group">
         <span>Brand Name:</span>
-        <select class="form-control">
-          <option>Please Select a Brand</option>
+        <select class="brand form-control" id="brand" ng-model="addNail.brand" required>
           <option>butter LONDON</option>
           <option>China Glaze</option>
           <option>Deborah Lippmann</option>
@@ -22,14 +21,13 @@
     <p class="colorName">
       <label class="form-group">
         <span>Color Name:</span>
-        <input type="text" class="form-control">
+        <input type="text" class="form-control" ng-model="addNail.name" required>
       </label>
     </p>
     <p class="colorFamily">
       <label class="form-group">
         <span>Color Family:</span>
-        <select class="form-control">
-          <option>Please Select a Color Family</option>
+        <select class="form-control" ng-model="addNail.family" required>
           <option>Pink</option>
           <option>Red</option>
           <option>Orange</option>
@@ -47,8 +45,7 @@
     <p class="colorTone">
       <label class="form-group">
         <span>Color Tone:</span>
-        <select class="form-control">
-          <option>Please Select a Color Tone</option>
+        <select class="form-control" ng-model="addNail.tone" required>
           <option>Cool</option>
           <option>Neutral</option>
           <option>Warm</option>
@@ -58,8 +55,7 @@
     <p class="colorFinish">
       <label class="form-group">
         <span>Color Finish:</span>
-        <select class="form-control">
-          <option>Please Select a Color Finish</option>
+        <select class="form-control" ng-model="addNail.finish" required>
           <option>Cream</option>
           <option>Jelly</option>
           <option>Metallic</option>
@@ -70,29 +66,19 @@
       </label>
     </p>
     <p class="rating">
-      <label class="form-group">
+      <label class="form-group" ng-model="addNail.rating">
         <span>Rating: </span>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="option1"> 1
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="option2"> 2
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="option3"> 3
-        </label>
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="option4"> 4
-        </label>
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="option5"> 5
-        </label>
+        <select class="form-control" ng-model="addNail.rating" required>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
       </label>
     </p>
     <p class="submit">
-      <input class="btn btn-default" type="submit" value="Add">
+      <input id="submit" class="btn btn-default" type="submit" value="Add" required>
     </p>
   </form>
 </div>
