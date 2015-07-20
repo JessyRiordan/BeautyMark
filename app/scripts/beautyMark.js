@@ -63,11 +63,23 @@
       // END $routeProvider nails/item
       // END NAILS routes
 
+      // EYES routes
       // routeProvider eyes
       $routeProvider.when('/eyes', {
-        templateUrl: 'views/eyes/category.html'
+        templateUrl: 'views/eyes/category.html',
+        controller: 'EyesController',
+        controllerAs: 'eyes'
       });
       // END $routeProvider eyes
+
+      // routeProvider nails/add
+      $routeProvider.when('/eyes/add', {
+        templateUrl: 'views/eyes/add.html',
+        controller: 'AddEyesController',
+        controllerAs: 'addEye'
+      });
+      // END $routeProvider nails/add
+      // END EYES routes
 
       // routeProvider face
       $routeProvider.when('/face', {
