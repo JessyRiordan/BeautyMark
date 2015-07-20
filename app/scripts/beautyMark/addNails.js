@@ -5,7 +5,7 @@
     .controller('AddNailsController', function(FIREBASE_URL, $firebaseArray, $location) {
       var ref = new Firebase(FIREBASE_URL);
       var authData = ref.getAuth();
-      var nailsRef = ref.child(authData.uid + "/nails");
+      var nailsRef = ref.child(authData.uid + '/nails');
       var nailProduct = {
         'brand': '',
         'name': '',

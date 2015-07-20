@@ -5,7 +5,7 @@
     .controller('AddEyesController', function(FIREBASE_URL, $firebaseArray, $location) {
       var ref = new Firebase(FIREBASE_URL);
       var authData = ref.getAuth();
-      var eyesRef = ref.child(authData.uid + "/eyes");
+      var eyesRef = ref.child(authData.uid + '/eyes');
       var eyeProduct = {
         'type': '',
         'product': '',

@@ -1,4 +1,4 @@
-/* global angular Firebase */
+/* global */
 // (function() {
 //     'use strict';
 //     angular.module('beautyMark')
