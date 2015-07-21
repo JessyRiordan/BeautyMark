@@ -1,5 +1,19 @@
 div.lipsAdd {
   font-family: 'Raleway', sans-serif;
+  ol.breadcrumb {
+    background-color: #fff;
+    text-align: right;
+    li {
+      color: #060847;
+      font-weight: bold;
+    }
+    li.middle::before {
+      content: "/ ";
+    }
+    li.active::before {
+      content: "/ ";
+    }
+  }
   h2.lipsAddTitle {
     color: #060847;
     font-variant: small-caps;

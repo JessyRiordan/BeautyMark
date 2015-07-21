@@ -1,5 +1,16 @@
 div.lipsCat {
   font-family: 'Raleway', sans-serif;
+  ol.breadcrumb {
+    background-color: #fff;
+    text-align: right;
+    li {
+      color: #060847;
+      font-weight: bold;
+    }
+    li.active::before {
+      content: "/ ";
+    }
+  }
   h2.lipsTitle {
     color: #060847;
     font-variant: small-caps;
