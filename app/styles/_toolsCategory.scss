@@ -1,5 +1,16 @@
 div.toolsCat {
   font-family: 'Raleway', sans-serif;
+  ol.breadcrumb {
+    background-color: #fff;
+    text-align: right;
+    li {
+      color: #060847;
+      font-weight: bold;
+    }
+    li.active::before {
+      content: "/ ";
+    }
+  }
   h2.toolsTitle {
     color: #060847;
     font-variant: small-caps;
