@@ -4,12 +4,27 @@ div.homepage {
     font-size: 25pt;
     font-weight: bold;
   }
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+  section.row {
+    margin-left: 0;
+    margin-right: 0;
+  }
   div.nails {
     display: inline-block;
     border: 0.5em solid #060847;
-    border-radius: 10%;
     height: 100%;
-    width: 48.5%;
+    width: 45%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url('/images/nail.png');
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
     a {
       display: block;
       height: 100%;
@@ -17,18 +32,21 @@ div.homepage {
       text-align: center;
       line-height: 2.5em;
       color: #060847;
-      img {
-        height: 5em;
-        width: 5em;
-      }
     }
   }
   div.eyes {
     display: inline-block;
     border: 0.5em solid #060847;
-    border-radius: 10%;
     height: 100%;
-    width: 48.5%;
+    width: 45%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url('/images/eyes.png');
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
     a {
       display: block;
       height: 100%;
@@ -36,18 +54,22 @@ div.homepage {
       text-align: center;
       line-height: 2.5em;
       color: #060847;
-      img {
-        height: 5em;
-        width: 5em;
-      }
     }
   }
   div.face {
     display: inline-block;
     border: 0.5em solid #060847;
-    border-radius: 10%;
     height: 100%;
-    width: 48.5%;
+    width: 45%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url('/images/face.png');
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
     a {
       display: block;
       height: 100%;
@@ -55,18 +77,21 @@ div.homepage {
       text-align: center;
       line-height: 2.5em;
       color: #060847;
-      img {
-        height: 5em;
-        width: 5em;
-      }
     }
   }
   div.lips {
     display: inline-block;
     border: 0.5em solid #060847;
-    border-radius: 10%;
     height: 100%;
-    width: 48.5%;
+    width: 45%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url('/images/lips.png');
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
     a {
       display: block;
       height: 100%;
@@ -74,18 +99,22 @@ div.homepage {
       text-align: center;
       line-height: 2.5em;
       color: #060847;
-      img {
-        height: 5em;
-        width: 5em;
-      }
     }
   }
   div.hair {
     display: inline-block;
     border: 0.5em solid #060847;
-    border-radius: 10%;
     height: 100%;
-    width: 48.5%;
+    width: 45%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    background-color: #fff;
+    background-image: url('/images/hair.png');
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
     a {
       display: block;
       height: 100%;
@@ -93,18 +122,21 @@ div.homepage {
       text-align: center;
       line-height: 2.5em;
       color: #060847;
-      img {
-        height: 5em;
-        width: 5em;
-      }
     }
   }
   div.tools {
     display: inline-block;
     border: 0.5em solid #060847;
-    border-radius: 10%;
     height: 100%;
-    width: 48.5%;
+    width: 45%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    background-color: #fff;
+    background-image: url('/images/tools.png');
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
     a {
       display: block;
       height: 100%;
@@ -112,10 +144,6 @@ div.homepage {
       text-align: center;
       line-height: 2.5em;
       color: #060847;
-      img {
-        height: 5em;
-        width: 5em;
-      }
     }
   }
 
