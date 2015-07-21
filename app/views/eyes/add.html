@@ -7,49 +7,47 @@
   <h2 class="eyesAddTitle">Eyes</h2>
   <form role="form" ng-submit="addEye.submitEye()">
     <p class="type">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Type of Eye Product:</span>
-        <select class="type form-control" id="brand" ng-model="addEye.type" required>
+        <select class="type form-control input-lg" id="brand" ng-model="addEye.type" required>
           <option>Mascara</option>
           <option>Eye Liner</option>
           <option>Single Eye Shadow</option>
           <option>Eye Shadow Palette</option>
           <option>Eye Primer</option>
         </select>
-      </label>
+      </fieldset>
     </p>
     <p class="productName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Product Name:</span>
-        <input type="text" class="form-control" ng-model="addEye.product" required>
-      </label>
+        <input type="text" placeholder="ex. Liquid Liner" class="form-control input-lg" ng-model="addEye.product" required>
+      </fieldset>
     </p>
     <p class="brandName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Brand Name:</span>
-        <input type="text" class="form-control" ng-model="addEye.brand" required>
-      </label>
+        <input type="text" placeholder="ex. MAC" class="form-control input-lg" ng-model="addEye.brand" required>
+      </fieldset>
     </p>
     <p class="colorName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Color Name:</span>
-        <input type="text" class="form-control" ng-model="addEye.color" required>
-      </label>
+        <input type="text"  placeholder="ex. Black" class="form-control input-lg" ng-model="addEye.color" required>
+      </fieldset>
     </p>
     <p class="rating">
-      <label class="form-group" ng-model="addEye.rating">
+      <fieldset class="form-group" ng-model="addEye.rating">
         <span>Rating: </span>
-        <select class="form-control" ng-model="addEye.rating" required>
+        <select class="form-control input-lg" ng-model="addEye.rating" required>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
         </select>
-      </label>
+      </fieldset>
     </p>
-    <p class="submit">
-      <input id="submit" class="btn btn-default" type="submit" value="Add" required>
-    </p>
+      <button id="submit" class="btn btn-default btn-lg btn-block" type="submit" value="Add">ADD</button>
   </form>
 </div>
