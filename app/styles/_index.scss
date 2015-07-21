@@ -1,4 +1,4 @@
-main.container-fluid {
+main.index {
   padding-left: 0;
   padding-right: 0;
   header.page-header {
@@ -9,9 +9,12 @@ main.container-fluid {
       color: #fff;
       margin-top: 0;
       margin-bottom: 0;
-      padding-top: 1.25em;
+/*       padding-top: 1.25em; */
       vertical-align: top;
       display: inline-block;
+      font-size: 33pt;
+      font-family: 'Cinzel Decorative', cursive;
+      font-variant: small-caps;
     }
     div.homepageLink {
       display: inline-block;
@@ -31,6 +34,7 @@ main.container-fluid {
     height: 4em;
     h3.designedBy {
       color: #FFFFFF;
+      font-family: 'Raleway', sans-serif;
       display: inline-block;
       vertical-align: top;
     }
