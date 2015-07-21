@@ -1,53 +1,67 @@
 div.faceAdd {
   font-family: 'Raleway', sans-serif;
-}
-h2.faceAddTitle {
-  color: #060847;
-  font-variant: small-caps;
-}
-form {
-  color: #060847;
-  p.type {
-    color: #060847;
-    select {
+  ol.breadcrumb {
+    background-color: #fff;
+    text-align: right;
+    li {
       color: #060847;
-      border-color: #060847;
+      font-weight: bold;
+    }
+    li.middle::before {
+      content: "/ ";
+    }
+    li.active::before {
+      content: "/ ";
     }
   }
-  p.productName {
+  h2.faceAddTitle {
     color: #060847;
-    input {
-      color: #060847;
-      border-color: #060847;
-    }
+    font-variant: small-caps;
   }
-  p.brandName {
+  form {
     color: #060847;
-    input {
+    p.type {
       color: #060847;
-      border-color: #060847;
+      select {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.colorName {
-    color: #060847;
-    input {
+    p.productName {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.rating {
-    color: #060847;
-    select {
+    p.brandName {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.submit {
-    color: #FFFFFF;
-    input {
+    p.colorName {
+      color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
+    }
+    p.rating {
+      color: #060847;
+      select {
+        color: #060847;
+        border-color: #060847;
+      }
+    }
+    p.submit {
       color: #FFFFFF;
-      background-color: #060847;
-      border-color: #060847;
+      input {
+        color: #FFFFFF;
+        background-color: #060847;
+        border-color: #060847;
+      }
     }
   }
 }
