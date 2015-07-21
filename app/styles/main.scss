@@ -21,6 +21,7 @@ $icon-font-path: '../fonts/';
 @import "lipsAdd.scss";
 @import "hairAdd.scss";
 
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -28,11 +29,9 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: Papyrus, fantasy;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

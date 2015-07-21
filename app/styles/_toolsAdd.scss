@@ -1,42 +1,46 @@
-h3.toolsAddTitle {
-  color: #060847;
-}
-form {
-  color: #060847;
-  p.type {
+div.toolsAdd {
+  font-family: 'Raleway', sans-serif;
+  h2.toolsAddTitle {
     color: #060847;
-    select {
-      color: #060847;
-      border-color: #060847;
-    }
+    font-variant: small-caps;
   }
-  p.productName {
+  form {
     color: #060847;
-    input {
+    p.type {
       color: #060847;
-      border-color: #060847;
+      select {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.brandName {
-    color: #060847;
-    input {
+    p.productName {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.rating {
-    color: #060847;
-    select {
+    p.brandName {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.submit {
-    color: #FFFFFF;
-    input {
+    p.rating {
+      color: #060847;
+      select {
+        color: #060847;
+        border-color: #060847;
+      }
+    }
+    p.submit {
       color: #FFFFFF;
-      background-color: #060847;
-      border-color: #060847;
+      input {
+        color: #FFFFFF;
+        background-color: #060847;
+        border-color: #060847;
+      }
     }
   }
 }

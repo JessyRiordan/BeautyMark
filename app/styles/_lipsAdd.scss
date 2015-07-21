@@ -1,56 +1,61 @@
-h3.lipsAddTitle {
-  color: #060847;
-}
-form {
-  color: #060847;
-  p.type {
+div.lipsAdd {
+  font-family: 'Raleway', sans-serif;
+  h2.lipsAddTitle {
     color: #060847;
-    select {
-      color: #060847;
-      border-color: #060847;
-    }
+    font-variant: small-caps;
   }
-  p.brandName {
+  form {
     color: #060847;
-    input {
+    p.type {
       color: #060847;
-      border-color: #060847;
+      select {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.colorName {
-    color: #060847;
-    input {
+    p.brandName {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.colorFamily {
-    color: #060847;
-    input {
+    p.colorName {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.colorTone {
-    color: #060847;
-    input {
+    p.colorFamily {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.rating {
-    color: #060847;
-    select {
+    p.colorTone {
       color: #060847;
-      border-color: #060847;
+      input {
+        color: #060847;
+        border-color: #060847;
+      }
     }
-  }
-  p.submit {
-    color: #FFFFFF;
-    input {
+    p.rating {
+      color: #060847;
+      select {
+        color: #060847;
+        border-color: #060847;
+      }
+    }
+    p.submit {
       color: #FFFFFF;
-      background-color: #060847;
-      border-color: #060847;
+      input {
+        color: #FFFFFF;
+        background-color: #060847;
+        border-color: #060847;
+      }
     }
   }
+
 }

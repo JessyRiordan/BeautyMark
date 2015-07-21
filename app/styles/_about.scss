@@ -1,45 +1,22 @@
-h3.aboutTitle {
-  color: #060847;
-}
-section.beautyMark {
-  border: 0.5em solid #060847;
-  border-radius: 5%;
-  color: #060847;
-  margin-bottom: 1em;
-  h4 {
-    margin: 1em;
-    text-decoration: underline;
+div.about {
+  font-family: 'Raleway', sans-serif;
+  h2.aboutTitle {
+    color: #060847;
+    font-variant: small-caps;
   }
-  p {
-    margin-left: 1em;
-    margin-right: 1em;
+  section.imageCredits {
+    border: 0.5em solid #060847;
+    border-radius: 5%;
+    color: #060847;
+    margin-bottom: 1em;
+    h4 {
+      margin: 1em;
+      text-decoration: underline;
+    }
+    p {
+      margin-left: 1em;
+      margin-right: 1em;
+    }
   }
-}
-section.author {
-  border: 0.5em solid #060847;
-  border-radius: 5%;
-  color: #060847;
-  margin-bottom: 1em;
-  h4 {
-    margin: 1em;
-    text-decoration: underline;
-  }
-  p {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-}
-section.imageCredits {
-  border: 0.5em solid #060847;
-  border-radius: 5%;
-  color: #060847;
-  margin-bottom: 1em;
-  h4 {
-    margin: 1em;
-    text-decoration: underline;
-  }
-  p {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
+
 }
