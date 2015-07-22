@@ -17,7 +17,9 @@
 
       // routeProvider homepage
       $routeProvider.when('/homepage', {
-        templateUrl: 'views/homepage.html'
+        templateUrl: 'views/homepage.html',
+        controller: 'LogoutController',
+        controllerAs: 'home'
       });
       // END $routeProvider homepage
 
