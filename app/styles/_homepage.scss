@@ -1,7 +1,7 @@
 div.homepage {
   font-family: 'Cinzel Decorative', cursive;
   ::first-letter {
-    font-size: 25pt;
+/*     font-size: 25pt; */
     font-weight: bold;
   }
   padding: 0;
@@ -146,5 +146,20 @@ div.homepage {
       color: #060847;
     }
   }
-
+  div.logout {
+    display: inline-block;
+    border: 2px solid #F4B7CE;
+    height: 2.5em;
+    width: 90%;
+    margin: 0 5% 3% 5%;
+    background-color: #F4B7CE;
+    a {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    }
+  }
 }
