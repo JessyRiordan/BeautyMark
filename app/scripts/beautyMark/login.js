@@ -18,6 +18,9 @@
           }, {
             remember: 'sessionOnly'
           });
+          // .then(function(){
+          //   $location.path('/homepage');
+          // });
           // ref.onAuth(function(authData) {
           //   if (authData && newUser) {
           //     ref.child('users').child(authData.uid).set({
