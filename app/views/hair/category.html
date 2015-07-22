@@ -4,19 +4,19 @@
     <li class="active">Hair</li>
   </ol>
   <h2 class="hairTitle">Hair</h2>
-  <section class="hairInfo" ng-hide="hair.data.length">
+  <section class="hairInfo jumbotron" ng-hide="hair.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
-      <div class="add">
-        <a href="#hair/add">ADD</a>
-      </div>
     </p>
+    <div class="add input-lg">
+      <a href="#hair/add">ADD</a>
+    </div>
   </section>
 <section class="hairProducts" ng-hide="!hair.data.length">
-  <div class="add">
+  <div class="add input-lg">
     <a href="#hair/add">ADD</a>
   </div>
-<div class="product" ng-repeat="hair in hair.data">
+<div class="product jumbotron" ng-repeat="hair in hair.data">
   <img src="/images/hair.png">
   <div class="productDetails pull-right">
     <div class="mainInfo">

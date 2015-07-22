@@ -4,19 +4,19 @@
     <li class="active">Face</li>
   </ol>
   <h2 class="faceTitle">Face</h2>
-  <section class="faceInfo" ng-hide="face.data.length">
+  <section class="faceInfo jumbotron" ng-hide="face.data.length">
     <p>You do not have any products.
       <br>Would you like to add some?
-      <div class="add">
-        <a href="#face/add">ADD</a>
-      </div>
     </p>
-  </section>
-  <section class="faceProducts" ng-hide="!face.data.length">
-    <div class="add">
+    <div class="add input-lg">
       <a href="#face/add">ADD</a>
     </div>
-    <div class="product" ng-repeat="face in face.data">
+  </section>
+  <section class="faceProducts" ng-hide="!face.data.length">
+    <div class="add input-lg">
+      <a href="#face/add">ADD</a>
+    </div>
+    <div class="product jumbotron" ng-repeat="face in face.data">
       <img src="/images/face.png">
       <div class="productDetails pull-right">
         <div class="mainInfo">

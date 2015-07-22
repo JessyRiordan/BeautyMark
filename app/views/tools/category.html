@@ -4,19 +4,19 @@
     <li class="active">Tools</li>
   </ol>
   <h2 class="toolsTitle">Tools</h2>
-  <section class="toolsInfo"  ng-hide="tools.data.length">
+  <section class="toolsInfo jumbotron"  ng-hide="tools.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
-      <div class="add">
-        <a href="#tools/add">ADD</a>
-      </div>
     </p>
+    <div class="add input-lg">
+      <a href="#tools/add">ADD</a>
+    </div>
   </section>
 <section class="toolsProducts" ng-hide="!tools.data.length">
-  <div class="add">
+  <div class="add input-lg">
     <a href="#tools/add">ADD</a>
   </div>
-<div class="product" ng-repeat="tools in tools.data">
+<div class="product jumbotron" ng-repeat="tools in tools.data">
   <img src="/images/tools.png">
   <div class="productDetails pull-right">
     <div class="mainInfo">
