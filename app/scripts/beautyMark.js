@@ -9,15 +9,17 @@
 
       // routeProvider login
       $routeProvider.when('/login', {
-        templateUrl: 'views/login.html'
+        templateUrl: 'views/login.html',
+        controller: 'LoginController',
+        controllerAs: 'login'
       });
       // END routeProvider login
 
       // routeProvider homepage
       $routeProvider.when('/homepage', {
         templateUrl: 'views/homepage.html',
-        controller: 'LoginController',
-        controllerAs: 'login'
+        controller: 'LogoutController',
+        controllerAs: 'home'
       });
       // END $routeProvider homepage
 
