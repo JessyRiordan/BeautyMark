@@ -27,19 +27,14 @@ main.index {
     background-color: #060847;
     width: 100%;
     height: 4em;
-    h3.designedBy {
-      color: #FFFFFF;
-      font-family: 'Raleway', sans-serif;
-      display: inline-block;
-      vertical-align: top;
-    }
     div.aboutLink {
       display: inline-block;
-      width: 30%;
+      text-align: center;
+      width: 100%;
       height: 4em;
-      img.about {
-        height: 80%;
-        padding-top: 1em;
+      i {
+        color: #fff;
+        margin: 0 0.25em;
       }
     }
 
