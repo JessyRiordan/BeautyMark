@@ -14,20 +14,99 @@ div.about {
   h2.aboutTitle {
     color: #060847;
     font-variant: small-caps;
+    text-align: center;
   }
   section.imageCredits {
-    border: 0.5em solid #060847;
-    border-radius: 5%;
-    color: #060847;
-    margin-bottom: 1em;
-    h4 {
-      margin: 1em;
-      text-decoration: underline;
+    /* border: 0.5em solid #060847; */
+    /* color: #060847; */
+    background-color: #fff;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    div.logoIcon {
+      border: 0.5em solid #060847;
+      width: 48%;
+      padding: 1%;
+      margin: 0 auto;
+      margin-bottom: 8%;
+      background-color: #060847;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
-    p {
-      margin-left: 1em;
-      margin-right: 1em;
+    div.nailsIcon {
+      border: 0.5em solid #060847;
+      width: 48%;
+      padding: 1%;
+      display: inline-block;
+      background-color: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div.eyesIcon {
+      border: 0.5em solid #060847;
+      width: 48%;
+      padding: 1%;
+      display: inline-block;
+      background-color: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div.faceIcon {
+      border: 0.5em solid #060847;
+      width: 48%;
+      padding: 1%;
+      display: inline-block;
+      background-color: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div.lipsIcon {
+      border: 0.5em solid #060847;
+      width: 48%;
+      padding: 1%;
+      display: inline-block;
+      background-color: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div.hairIcon {
+      border: 0.5em solid #060847;
+      width: 48%;
+      padding: 1%;
+      display: inline-block;
+      background-color: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div.toolsIcon {
+      border: 0.5em solid #060847;
+      width: 48%;
+      padding: 1%;
+      display: inline-block;
+      background-color: #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
-
+  section.copyright {
+    background-color: #fff;
+    color: #060847;
+    padding-top: 0;
+    h3{
+      text-align: center;
+    }
+  }
 }
