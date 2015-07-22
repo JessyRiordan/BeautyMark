@@ -7,49 +7,48 @@
   <h2 class="faceAddTitle">Face</h2>
   <form role="form" ng-submit="addFace.submitFace()">
     <p class="type">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Type of Face Product:</span>
-        <select class="type form-control" id="brand" ng-model="addFace.type" required>
+        <select class="type form-control input-lg" id="brand" ng-model="addFace.type" required>
           <option>Foundation</option>
           <option>Powder</option>
           <option>Blush</option>
           <option>Bronzer</option>
           <option>Face Primer</option>
+          <option>Setting Spray</option>
         </select>
-      </label>
+      </fieldset>
     </p>
     <p class="productName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Product Name:</span>
-        <input type="text" class="form-control" ng-model="addFace.product" required>
-      </label>
+        <input type="text" placeholder="ex. Camera Ready BB Cream" class="form-control input-lg" ng-model="addFace.product" required>
+      </fieldset>
     </p>
     <p class="brandName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Brand Name:</span>
-        <input type="text" class="form-control" ng-model="addFace.brand" required>
-      </label>
+        <input type="text" placeholder="ex. SMASHBOX" class="form-control input-lg" ng-model="addFace.brand" required>
+      </fieldset>
     </p>
     <p class="colorName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Color Name:</span>
-        <input type="text" class="form-control" ng-model="addFace.color" required>
-      </label>
+        <input type="text" placeholder="ex. Fair" class="form-control input-lg" ng-model="addFace.color" required>
+      </fieldset>
     </p>
     <p class="rating">
-      <label class="form-group" ng-model="addFace.rating">
-        <span>Rating: </span>
-        <select class="form-control" ng-model="addFace.rating" required>
+      <fieldset class="form-group">
+        <span>Rating:</span>
+        <select class="form-control input-lg" ng-model="addFace.rating" required>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
         </select>
-      </label>
+      </fieldset>
     </p>
-    <p class="submit">
-      <input id="submit" class="btn btn-default" type="submit" value="Add" required>
-    </p>
+    <button id="submit" class="btn btn-default btn-lg btn-block" type="submit" value="Add">ADD</button>
   </form>
 </div>
