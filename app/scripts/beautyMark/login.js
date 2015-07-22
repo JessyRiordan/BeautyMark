@@ -23,7 +23,7 @@
           // .then(function(){
           //   $location.path('/homepage');
           // });
-          ref.onAuth(function(authData) {
+          ref.onAuth(function() {
             if (authData && newUser) {
               ref.child('users').child(authData.uid).set({
                 provider: authData.provider,
