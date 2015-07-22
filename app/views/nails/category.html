@@ -1,18 +1,22 @@
-<div class="container-fluid">
-  <h3 class="nailsTitle">Nails</h3>
-  <section class="nailsInfo"  ng-hide="nails.data.length">
+<div class="nailsCat container-fluid">
+  <ol class="breadcrumb">
+    <li><a href="#homepage">Home</a></li>
+    <li class="active">Nails</li>
+  </ol>
+  <h2 class="nailsTitle">Nails</h2>
+  <section class="nailsInfo jumbotron"  ng-hide="nails.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
-      <div class="add">
-        <a href="#nails/add">ADD</a>
-      </div>
     </p>
-  </section>
-  <section class="nailsProducts" ng-hide="!nails.data.length">
-    <div class="add">
+    <div class="add input-lg">
       <a href="#nails/add">ADD</a>
     </div>
-  <div class="product" ng-repeat="nail in nails.data">
+  </section>
+  <section class="nailsProducts" ng-hide="!nails.data.length">
+    <div class="add input-lg">
+      <a href="#nails/add">ADD</a>
+    </div>
+  <div class="product jumbotron" ng-repeat="nail in nails.data">
     <img src="/images/nail.png">
     <div class="productDetails pull-right">
       <div class="mainInfo">

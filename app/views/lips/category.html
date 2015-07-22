@@ -1,29 +1,33 @@
-<div class="container-fluid">
-  <h3 class="lipsTitle">Lips</h3>
-  <section class="lipsInfo" ng-hide="lips.data.length">
+<div class="lipsCat container-fluid">
+  <ol class="breadcrumb">
+    <li><a href="#homepage">Home</a></li>
+    <li class="active">Lips</li>
+  </ol>
+  <h2 class="lipsTitle">Lips</h2>
+  <section class="lipsInfo jumbotron" ng-hide="lips.data.length">
     <p>You do not have any products.
-    <br>Would you like to add some?
-      <div class="add">
-        <a href="#lips/add">ADD</a>
-      </div>
+      <br>Would you like to add some?
     </p>
+    <div class="add input-lg">
+      <a href="#lips/add">ADD</a>
+    </div>
   </section>
-</div>
-<section class="faceProducts" ng-hide="!lips.data.length">
-  <div class="add">
-    <a href="#lips/add">ADD</a>
-  </div>
-  <div class="product" ng-repeat="lips in lips.data">
-    <img src="/images/lips.png">
-    <div class="productDetails pull-right">
-      <div class="mainInfo">
-        <h4>{{lips.type}}</h4>
-        <h4>{{lips.brand}}</h4>
-      </div>
-      <div class="secondaryInfo">
-        <p>{{lips.color}}, {{lips.family}}, {{lips.tone}}
-        <br>Rating: {{lips.rating}}</p>
+  <section class="lipsProducts" ng-hide="!lips.data.length">
+    <div class="add input-lg">
+      <a href="#lips/add">ADD</a>
+    </div>
+    <div class="product jumbotron" ng-repeat="lips in lips.data">
+      <img src="/images/lips.png">
+      <div class="productDetails pull-right">
+        <div class="mainInfo">
+          <h4>{{lips.type}}</h4>
+          <h4>{{lips.brand}}</h4>
+        </div>
+        <div class="secondaryInfo">
+          <p>{{lips.color}}, {{lips.family}}
+            <br>Rating: {{lips.rating}}</p>
+        </div>
       </div>
     </div>
-  </div>
   </section>
+</div>

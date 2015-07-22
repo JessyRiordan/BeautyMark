@@ -1,25 +1,23 @@
-main.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
+main.index {
+  padding: 0;
   header.page-header {
     background-color: #060847;
     margin: 0;
     height: 8em;
     h1.title {
       color: #fff;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-top: 1.25em;
       vertical-align: top;
       display: inline-block;
+      font-size: 33pt;
+      font-family: 'Cinzel Decorative', cursive;
+      font-variant: small-caps;
     }
     div.homepageLink {
       display: inline-block;
-      width:30%;
+      width:25%;
       height: 8em;
       img.logo {
-        height: 80%;
-        padding-top: 1em;
+        height: 70%;
      }
     }
   }
@@ -29,18 +27,14 @@ main.container-fluid {
     background-color: #060847;
     width: 100%;
     height: 4em;
-    h3.designedBy {
-      color: #FFFFFF;
-      display: inline-block;
-      vertical-align: top;
-    }
     div.aboutLink {
       display: inline-block;
-      width: 30%;
+      text-align: center;
+      width: 100%;
       height: 4em;
-      img.about {
-        height: 80%;
-        padding-top: 1em;
+      i {
+        color: #fff;
+        margin: 0 0.25em;
       }
     }
 

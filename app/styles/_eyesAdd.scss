@@ -1,49 +1,35 @@
-h3.eyesAddTitle {
-  color: #060847;
-}
-form {
-  color: #060847;
-  p.type {
+div.eyesAdd {
+  font-family: 'Raleway', sans-serif;
+  ol.breadcrumb {
+    background-color: #fff;
+    text-align: right;
+    li {
+      color: #060847;
+      font-weight: bold;
+    }
+    li.middle::before {
+      content: "/ ";
+    }
+    li.active::before {
+      content: "/ ";
+    }
+  }
+  h2.eyesAddTitle {
     color: #060847;
-    select {
+    font-variant: small-caps;
+    text-align: center;
+  }
+  form {
+    color: #060847;
+    font-size: large;
+    margin-bottom: 3%;
+    .form-control {
       color: #060847;
       border-color: #060847;
     }
-  }
-  p.productName {
-    color: #060847;
-    input {
-      color: #060847;
-      border-color: #060847;
-    }
-  }
-  p.brandName {
-    color: #060847;
-    input {
-      color: #060847;
-      border-color: #060847;
-    }
-  }
-  p.colorName {
-    color: #060847;
-    input {
-      color: #060847;
-      border-color: #060847;
-    }
-  }
-  p.rating {
-    color: #060847;
-    select {
-      color: #060847;
-      border-color: #060847;
-    }
-  }
-  p.submit {
-    color: #FFFFFF;
-    input {
-      color: #FFFFFF;
+    button {
       background-color: #060847;
-      border-color: #060847;
+      color: #fff;
     }
   }
 }

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BeautyMark</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Raleway|Cinzel+Decorative' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
@@ -21,7 +24,7 @@
   </head>
   <body>
 
-    <main class="container-fluid">
+    <main class="index container-fluid">
       <header class="page-header">
         <h1 class="title col-md-8">BeautyMark</h1>
         <div class="homepageLink col-md-4">
@@ -32,11 +35,17 @@
       </header>
       <div ng-view></div>
       <footer class="page-footer">
-        <h3 class="designedBy col-md-8">© 2015 JessySue</h3>
-        <div class="aboutLink col-md-4">
-        <a href="#about">
-          <img src="/images/about.png" class="about img-rounded pull-right">
-        </a>
+        <div class="aboutLink col-md-12">
+          <a href="https://github.com/JessyRiordan/BeautyMark">
+            <i class="fa fa-github fa-3x"></i>
+          </a>
+          <a href="mailto:jessy.riordan@gmail.com?subject=BeautyMark">
+            <i class="fa fa-envelope-o fa-3x"></i>
+          </a>
+          <a href="#about">
+            <i class="fa fa-info-circle fa-3x"></i>
+          </a>
+        </div>
       </footer>
 
     </main> <!-- END: container -->
@@ -70,10 +79,10 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/beautyMark.js"></script>
+    <script src="scripts/beautyMark/homepage.js"></script>
     <script src="scripts/beautyMark/login.js"></script>
     <script src="scripts/beautyMark/nails.js"></script>
     <script src="scripts/beautyMark/addNails.js"></script>
-    <script src="scripts/beautyMark/services/nailItem.js"></script>
     <script src="scripts/beautyMark/eyes.js"></script>
     <script src="scripts/beautyMark/addEyes.js"></script>
     <script src="scripts/beautyMark/face.js"></script>

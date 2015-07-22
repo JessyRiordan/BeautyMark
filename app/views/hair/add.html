@@ -1,42 +1,45 @@
-<div class="container-fluid">
-  <h3 class="hairAddTitle">Hair</h3>
+<div class="hairAdd container-fluid">
+  <ol class="breadcrumb">
+    <li><a href="#homepage">Home</a></li>
+    <li class="middle"><a href="#hair">Hair</a></li>
+    <li class="active">Add</li>
+  </ol>
+  <h2 class="hairAddTitle">Hair</h2>
   <form role="form" ng-submit="addHair.submitHair()">
     <p class="type">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Type of Hair Product:</span>
-        <select class="type form-control" id="brand" ng-model="addHair.type" required>
+        <select class="type form-control input-lg" id="brand" ng-model="addHair.type" required>
           <option>Shampoo</option>
           <option>Conditioner</option>
           <option>Styling Product</option>
         </select>
-      </label>
+      </fieldset>
     </p>
     <p class="productName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Product Name:</span>
-        <input type="text" class="form-control" ng-model="addHair.product" required>
-      </label>
+        <input type="text" placeholder="ex. Ginger" class="form-control input-lg" ng-model="addHair.product" required>
+      </fieldset>
     </p>
     <p class="brandName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Brand Name:</span>
-        <input type="text" class="form-control" ng-model="addHair.brand" required>
-      </label>
+        <input type="text" placeholder="ex. The Body Shop" class="form-control input-lg" ng-model="addHair.brand" required>
+      </fieldset>
     </p>
     <p class="rating">
-      <label class="form-group" ng-model="addHair.rating">
+      <fieldset class="form-group">
         <span>Rating: </span>
-        <select class="form-control" ng-model="addHair.rating" required>
+        <select class="form-control input-lg" ng-model="addHair.rating" required>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
         </select>
-      </label>
+      </fieldset>
     </p>
-    <p class="submit">
-      <input id="submit" class="btn btn-default" type="submit" value="Add" required>
-    </p>
+    <button id="submit" class="btn btn-default btn-lg btn-block" type="submit" value="Add">ADD</button>
   </form>
 </div>

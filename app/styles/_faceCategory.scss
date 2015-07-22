@@ -1,75 +1,90 @@
-h3.faceTitle {
-  color: #060847;
-  text-align: center;
-}
-section.faceInfo {
-  color: #060847;
-  text-align: center;
-  p {
-    padding: 1em;
-    text-align: center;
-  }
-  div.add {
-    display: inline-block;
-    border: 2px solid #060847;
-    border-radius: 8%;
-    height: 2.5em;
-    width: 10em;
-    background-color: #060847;
-    text-align: center;
-    a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    line-height: 2.5em;
-    color: #FFFFFF;
-    }
-  }
-}
-section.faceProducts {
-  div.add {
-    border: 2px solid #060847;
-    border-radius: 8%;
-    height: 2.5em;
-    width: 10em;
-    background-color: #060847;
-    text-align: center;
-    margin: 5%;
-    a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    line-height: 2.5em;
-    color: #FFFFFF;
-    }
-  }
-  div.product {
-    border: 0.5em solid #060847;
-    border-radius: 10%;
-    height: 100%;
-    width: 95%;
-    margin: 5%;
-    img {
-      display: inline-block;
-      border-radius: 10%;
-      height: 40%;
-      width: 40%;
-    }
-    div.productDetails{
-      width: 55%;
+div.faceCat {
+  font-family: 'Raleway', sans-serif;
+  ol.breadcrumb {
+    background-color: #fff;
+    text-align: right;
+    li {
       color: #060847;
-      div.mainInfo {
-        display: inline-block;
-        text-align: left;
-        margin-top: 5%;
-      }
-      div.secondaryInfo {
-        text-align: left;
-        margin-bottom: 5%;
+      font-weight: bold;
+    }
+    li.active::before {
+      content: "/ ";
+    }
+  }
+  h2.faceTitle {
+    color: #060847;
+    font-variant: small-caps;
+    text-align: center;
+  }
+  section.faceInfo {
+    color: #060847;
+    background-color: #fff;
+    text-align: center;
+    p {
+      text-align: center;
+    }
+    div.add {
+      display: inline-block;
+      border: 2px solid #060847;
+      height: 2.5em;
+      width: 100%;
+      background-color: #060847;
+      text-align: center;
+      a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      color: #FFFFFF;
       }
     }
+  }
+  section.faceProducts {
+    div.add {
+      display: inline-block;
+      border: 2px solid #060847;
+      height: 2.5em;
+      width: 100%;
+      background-color: #060847;
+      text-align: center;
+      a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      color: #FFFFFF;
+      }
+    }
+    div.product {
+      border: 0.5em solid #060847;
+      background-color: #fff;
+      height: 100%;
+      width: 95%;
+      margin: 3%;
+      padding: 3%;
+      img {
+        display: inline-block;
+        padding-right: 2%;
+        height: 40%;
+        width: 40%;
+      }
+      div.productDetails{
+        width: 60%;
+        color: #060847;
+        div.mainInfo {
+          display: inline-block;
+          text-align: left;
+          width: 100%;
+          margin-top: -3%;
+        }
+        div.secondaryInfo {
+          text-align: left;
+          p {
+            font-size: 11pt;
+          }
+        }
+      }
 
+    }
   }
 }

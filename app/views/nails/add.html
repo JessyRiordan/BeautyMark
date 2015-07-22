@@ -1,10 +1,15 @@
-<div class="container-fluid">
-  <h3 class="nailsAddTitle">Nails</h3>
+<div class="nailsAdd container-fluid">
+  <ol class="breadcrumb">
+    <li><a href="#homepage">Home</a></li>
+    <li class="middle"><a href="#nails">Nails</a></li>
+    <li class="active">Add</li>
+  </ol>
+  <h2 class="nailsAddTitle">Nails</h2>
   <form role="form" ng-submit="addNail.submitNail()">
     <p class="brandName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Brand Name:</span>
-        <select class="brand form-control" id="brand" ng-model="addNail.brand" required>
+        <select class="brand form-control input-lg" id="brand" ng-model="addNail.brand" required>
           <option>butter LONDON</option>
           <option>China Glaze</option>
           <option>Deborah Lippmann</option>
@@ -16,18 +21,18 @@
           <option>Sephora</option>
           <option>Zoya</option>
         </select>
-      </label>
+      </fieldset>
     </p>
     <p class="colorName">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Color Name:</span>
-        <input type="text" class="form-control" ng-model="addNail.name" required>
-      </label>
+        <input type="text" placeholder="ex. Build Me Up Buttercup" class="form-control input-lg" ng-model="addNail.name" required>
+      </fieldset>
     </p>
     <p class="colorFamily">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Color Family:</span>
-        <select class="form-control" ng-model="addNail.family" required>
+        <select class="form-control input-lg" ng-model="addNail.family" required>
           <option>Pink</option>
           <option>Red</option>
           <option>Orange</option>
@@ -40,22 +45,22 @@
           <option>White</option>
           <option>Nude</option>
         </select>
-      </label>
+      </fieldset>
     </p>
     <p class="colorTone">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Color Tone:</span>
-        <select class="form-control" ng-model="addNail.tone" required>
+        <select class="form-control input-lg" ng-model="addNail.tone" required>
           <option>Cool</option>
           <option>Neutral</option>
           <option>Warm</option>
         </select>
-      </label>
+      </fieldset>
     </p>
     <p class="colorFinish">
-      <label class="form-group">
+      <fieldset class="form-group">
         <span>Color Finish:</span>
-        <select class="form-control" ng-model="addNail.finish" required>
+        <select class="form-control input-lg" ng-model="addNail.finish" required>
           <option>Cream</option>
           <option>Jelly</option>
           <option>Metallic</option>
@@ -63,22 +68,20 @@
           <option>Glitter</option>
           <option>Matte</option>
         </select>
-      </label>
+      </fieldset>
     </p>
     <p class="rating">
-      <label class="form-group" ng-model="addNail.rating">
+      <fieldset class="form-group">
         <span>Rating: </span>
-        <select class="form-control" ng-model="addNail.rating" required>
+        <select class="form-control input-lg" ng-model="addNail.rating" required>
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
           <option>5</option>
         </select>
-      </label>
+      </fieldset>
     </p>
-    <p class="submit">
-      <input id="submit" class="btn btn-default" type="submit" value="Add" required>
-    </p>
+    <button id="submit" class="btn btn-default btn-lg btn-block" type="submit" value="Add">ADD</button>
   </form>
 </div>
