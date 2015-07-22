@@ -4,19 +4,19 @@
     <li class="active">Eyes</li>
   </ol>
   <h2 class="eyesTitle">Eyes</h2>
-  <section class="eyesInfo" ng-hide="eyes.data.length">
+  <section class="eyesInfo jumbotron" ng-hide="eyes.data.length">
     <p>You do not have any products.
     <br>Would you like to add some?
-      <div class="add">
-        <a href="#eyes/add">ADD</a>
-      </div>
     </p>
+    <div class="add input-lg">
+      <a href="#eyes/add">ADD</a>
+    </div>
   </section>
 <section class="eyesProducts" ng-hide="!eyes.data.length">
-  <div class="add">
+  <div class="add input-lg">
     <a href="#eyes/add">ADD</a>
   </div>
-<div class="product" ng-repeat="eye in eyes.data">
+<div class="product jumbotron" ng-repeat="eye in eyes.data">
   <img src="/images/eyes.png">
   <div class="productDetails pull-right">
     <div class="mainInfo">
