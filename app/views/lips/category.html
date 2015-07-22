@@ -4,19 +4,19 @@
     <li class="active">Lips</li>
   </ol>
   <h2 class="lipsTitle">Lips</h2>
-  <section class="lipsInfo" ng-hide="lips.data.length">
+  <section class="lipsInfo jumbotron" ng-hide="lips.data.length">
     <p>You do not have any products.
       <br>Would you like to add some?
-      <div class="add">
-        <a href="#lips/add">ADD</a>
-      </div>
     </p>
-  </section>
-  <section class="lipsProducts" ng-hide="!lips.data.length">
-    <div class="add">
+    <div class="add input-lg">
       <a href="#lips/add">ADD</a>
     </div>
-    <div class="product" ng-repeat="lips in lips.data">
+  </section>
+  <section class="lipsProducts" ng-hide="!lips.data.length">
+    <div class="add input-lg">
+      <a href="#lips/add">ADD</a>
+    </div>
+    <div class="product jumbotron" ng-repeat="lips in lips.data">
       <img src="/images/lips.png">
       <div class="productDetails pull-right">
         <div class="mainInfo">
@@ -24,7 +24,7 @@
           <h4>{{lips.brand}}</h4>
         </div>
         <div class="secondaryInfo">
-          <p>{{lips.color}}, {{lips.family}}, {{lips.tone}}
+          <p>{{lips.color}}, {{lips.family}}
             <br>Rating: {{lips.rating}}</p>
         </div>
       </div>
